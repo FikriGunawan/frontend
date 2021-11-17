@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "category": "Teori Desain",
+      "question": "Mana yang BUKAN bagian dari Gestalt?",
+      "choices": ["Figure & Ground", "Flow", "Closure"],
+      "answer": "Figure & Ground"
+    },
+    {
+      "category": "Teori Desain",
+      "question": "Apakah sebuah file dihitung sebagai PNG ketika klien mengirimi kalian file dalam format word?",
+      "choices": ["Tidak", "Ya, selama image terlampir di dalam dokumen merupakan PNG", "Itu tergantung dengan versi dari Microsoft Word"],
+      "answer": "Tidak"
+    },
+    {
+      "category": "Teori Desain",
+      "question": "Apa itu warna monokromatik?",
+      "choices": ["Warna dengan tint, shade, and tone yang berbeda", "Kombinasi warna yang hanya terdiri dari putih, abu-abu, dan hitam", "Kombinasi warna yang terdiri dari warna primer"],
+      "answer": "Warna dengan tint, shade, and tone yang berbeda"
+    },
+    {
+      "category": "Teori Desain",
+      "question": "Warna yang saling berlawanan pada roda warna disebut?",
+      "choices": ["Analogous", "Complementary", "Split Complementary"],
+      "answer": "Analogous"
+    },
+    {
+      "category": "Teori Desain",
+      "question": "Apa itu Leading?",
+      "choices": ["Penyesuaian spasi antara dua huruf", "Jarak vertikal antara baris tulisan", "Jarak keseluruhan antara kelompok huruf"],
+      "answer": "Penyesuaian spasi antara dua huruf"
+    },
+    {
+      "category": "Adobe Illustrator",
+      "question": "Berikut merupakan tools yang termasuk dalam kategori Transformation tools, KECUALI:",
+      "choices": ["Scale", "Invert", "Reflect"],
+      "answer": "Scale"
+    },
+    {
+      "category": "Adobe Illustrator",
+      "question": "Kalian dapat mengubah lebar dan panjang artboard setelah kalian membuatnya.",
+      "choices": ["Benar", "Salah", "Hanya pada saat mengecilkan ukuran artboard-nya"],
+      "answer": "Benar"
+    },
+    {
+      "category": "Adobe Illustrator",
+      "question": "Dimana kalian dapat menemukan Drop Shadow Effect?",
+      "choices": ["Distort & Transform", "Stylize", "Blur"],
+      "answer": "Distort & Transform"
+    },
+    {
+      "category": "Adobe Illustrator",
+      "question": "Dapatkah kalian meng-expand brush stroke?",
+      "choices": ["Tergantung dengan stroke effect-nya", "Tidak bisa", "Ya, bisa"],
+      "answer": "Tergantung dengan stroke effect-nya"
+    },
+    {
+      "category": "Adobe Photoshop",
+      "question": "Apa kepanjangan dari PNG?",
+      "choices": ["Portable Network Graphics", "Photographic Network Graphics", "Photographic Node Graphics"],
+      "answer": "Portable Network Graphics"
+    },
+    {
+      "category": "Adobe Photoshop",
+      "question": "Bisakah kalian menduplikasi layer ke file Adobe Photoshop lain?",
+      "choices": ["Hanya pada file yang mempunyai ukuran artboard yang sama", "Tidak bisa", "Ya, bisa"],
+      "answer": "Hanya pada file yang mempunyai ukuran artboard yang sama"
+    },
+    {
+      "category": "Adobe Photoshop",
+      "question": "Apa itu Levels?",
+      "choices": ["Untuk menumpuk dan menggabungkan gambar di atas satu sama lain", "Penyesuaian untuk semua tone warna di tonal range", "Mengembalikan versi gambar sebelumnya"],
+      "answer": "Untuk menumpuk dan menggabungkan gambar di atas satu sama lain"
+    },
+    {
+      "category": "Adobe Photoshop",
+      "question": "Bisakah kalian mengedit ribuan gambar sekaligus di Adobe Photoshop?",
+      "choices": ["Ya, melalui Duplicate Tool", "Ya, dengan kerja keras dan kebulatan tekad", "Ya, melalui Batch Processing"],
+      "answer": "Ya, melalui Duplicate Tool"
+    },    
+    {
+      "category": "Adobe Indesign",
+      "question": "Jika kalian ingin mengubah font untuk seluruh dokumen, apa yang dapat menghemat waktu kalian?",
+      "choices": ["Copy and paste type frame-nya", "Membuat paragraph style", "Menggunakan Eye Drop tool terhadap type frame barunya ke yang lain"],
+      "answer": "Copy and paste type frame-nya"
+    },
+    {
+      "category": "Adobe Indesign",
+      "question": "Berikut adalah beberapa cara untuk menambahkan text ke dokumen Adobe Indesign, KECUALI:",
+      "choices": ["Paste file dengan text dari Microsoft Word", "Membuat text frame", "Menggunakan tombol command/control + T"],
+      "answer": "Paste file dengan text dari Microsoft Word"
+    },
+    {
+      "category": "Adobe Indesign",
+      "question": "Bisakah kalian mempunyai lebih dari SATU slide master?",
+      "choices": ["Hanya pada tipe document file", "Tidak bisa", "Ya, bisa"],
+      "answer": "Hanya pada tipe document file"
+    },
+    {
+      "category": "Soft Skills",
+      "question": "Apa yang akan kalian lakukan pada hari pertama kalian di kantor?",
+      "choices": ["Menunggu sampai kalian diberikan pekerjaan", "Memperkenalkan diri kalian kepada rekan-rekan kantor", "Membuat diri kalian sendiri nyaman"],
+      "answer": "Menunggu sampai kalian diberikan pekerjaan"
+    },
+    {
+      "category": "Soft Skills",
+      "question": "Hal terpenting apa yang harus kalian lakukan untuk mempersiapkan wawancara?",
+      "choices": ["Tidur dengan nyenyak", "Mengingat semua hal yang harus diucapkan", "Perawatan diri untuk membuat diri kalian tetap tenang dan meningkatkan kepercayaan diri kalian"],
+      "answer": "Tidur dengan nyenyak"
+    },
+    {
+      "category": "Soft Skills",
+      "question": "Bagaimana kalian menerima kritik dari rekan kerja kalian?",
+      "choices": ["Belajar dari kritik dan masukan konstruktif untuk hasil kerja kalian", "Cobalah untuk mempertahankan desain kalian saat kalian percaya diri dengannya", "Buktikan kepada mereka apakah yang mereka katakan dapat membuat desain kalian lebih baik atau tidak"],
+      "answer": "Belajar dari kritik dan masukan konstruktif untuk hasil kerja kalian"
+    },
+    {
+      "category": "Soft Skills",
+      "question": "Apa hal pertama yang harus kalian lakukan saat memulai meeting dengan klien potensial?",
+      "choices": ["Jabat tangan mereka dan memperkenalkan diri kalian", "Memberikan kartu bisnis kalian", "Berikan mereka pujian"],
+      "answer": "Jabat tangan mereka dan memperkenalkan diri kalian"
+    }
+  ]
+}

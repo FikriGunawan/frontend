@@ -1,0 +1,34 @@
+/* =================================== FOOTER =================================== */
+footer .secSubscribe{padding: 5% 12.4%;}
+footer .secSubscribe h4{margin-bottom: 7vh;width: 61%;}
+footer .secSubscribe form .form-group{padding-right: 3%;}
+footer .secSubscribe form .form-group .btnBlack{margin-top: 4.41vh;padding: 1.57vh 2.5vw;}
+footer .secSubscribe .gotop{position: absolute;margin: 0;bottom: 0;right: 0;width: 15%;}
+footer .secFooter{padding: 5%;background: #fff;}
+footer .secFooter .logo{width: 80%;}
+footer .secFooter .social{display: inline-block;vertical-align: middle;width: 18%;}
+footer .secFooter .social img{display: block;position: relative;z-index: 1;margin: 0 0 25% 80%;width: 80%;}
+footer .secFooter h6{margin-bottom: 3vh;font-family: "Poppins Bold";font-size: 1.05vw;letter-spacing: 1px;text-transform: capitalize;}
+footer .secFooter p{margin-bottom: 0;font-family: "Poppins Light";}
+footer .secFooter hr{position: absolute;margin: 0;top: 0;right: 5%;width: 2px;height: 100%;border: 0;background: #000;}
+footer .secFooter .wrapCol01{padding-left: 30%;}
+footer .secFooter .wrapCol02{padding-left: 5%;}
+footer .secFooter .secFooterOH p{width: 80%;}
+footer .secCopyright{padding: 0.7%;}
+footer .secCopyright p{margin-bottom: 0;color: #fff;}
+@media screen and (max-width: 846px) {
+  footer .secSubscribe{padding-bottom: 40vh;}
+  footer .secSubscribe h4{margin-bottom: 6vh;width: 100%;}
+  footer .secSubscribe .gotop{width: 100%;}
+  footer .secFooter{padding: 20% 10% 25%;}
+  footer .secFooter .logo{margin-bottom: 3vh;width: 70%;}
+  footer .secFooter .social{margin-bottom: 7vh;width: 100%;}
+  footer .secFooter .social a{display: inline-block;margin-bottom: 0;width: 15%;}
+  footer .secFooter .social a img{margin: 0;}
+  footer .secFooter h6{margin-bottom: 1.2vh;font-size: 3.2vw;}
+  footer .secFooter hr{position: relative;margin: 7vh 0;top: unset;right: unset;width: 100%;height: 1px;}
+  footer .secFooter .wrapCol01{margin-bottom: 7vh;padding-left: 0;}
+  footer .secFooter .wrapCol02{padding-left: 0;}
+  footer .secFooter .secFooterOH p{width: 100%;}
+  footer .secCopyright{padding: 5% 10%;}
+}
