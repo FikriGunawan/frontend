@@ -6,6 +6,7 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import '../../App.css';
+import { Markup } from 'interweave';
 import Navbar from './components/Navbar.js';
 import Footer from './components/Footer.js';
 import imgStepbystepheader from '../../assets/images/resources/step-by-step-header.jpg';
@@ -20,24 +21,6 @@ import imgWebsitedesignproposaltemplatecover from '../../assets/images/resources
 import imgPortfoliocover from '../../assets/images/resources/portfolio-cover.png';
 import imgFinalprojectcover from '../../assets/images/resources/final-project-cover.png';
 import fetch from 'isomorphic-fetch';
-
-// Form
-function sendEmail(e) {
-  e.preventDefault();
-
-  emailjs.sendForm(
-    'service_nnr4tu9',
-    'template_tu72t9p',
-    e.target,
-    'user_MlLNxrp3PV3vyrlG5uG5C'
-    ).then((result) => {
-      console.log(result.text);
-      window.location.href = 'http://ompfe.okular.co.id/static/media/OMP-Step-by-Step-for-Becoming-a-Professional.914504af.pdf';
-  }, (error) => {
-      console.log(error.text);
-  });
-  e.target.reset()
-}
 
 // Owl Carousel Settings
 const optionCarouselResourcesDetailOther = {
@@ -75,7 +58,8 @@ class SingleResources extends React.Component{
       Header_Image_Mobile: '',
       Form_Image: '',
       Ornament: '',
-      Ornament_Mobile: ''
+      Ornament_Mobile: '',
+      Ebrochure: ''
     }
   }
   
@@ -92,11 +76,33 @@ class SingleResources extends React.Component{
       this.setState({Form_Image: resources.Form_Image.url});
       this.setState({Ornament: resources.Ornament.url});
       this.setState({Ornament_Mobile: resources.Ornament_Mobile.url});
+      this.setState({Ebrochure: resources.Ebrochure.url});
     })
   }
   
   render(){
-    const {id, Nav_Link_ID, Title, Thumbnail, Header_Title, Form_Brief, Form_Disclaimer, Other_Sub_Title, Other_Title} = this.state.SingleResources;
+    const {id, Nav_Link_ID, Title, Header_Title, Form_Brief, Form_Disclaimer, Other_Sub_Title, Other_Title} = this.state.SingleResources;
+    const dlink = `http://ompcms.okular.co.id${this.state.Ebrochure}`;
+
+    // Form
+    function sendEmail(e) {
+      e.preventDefault();
+
+      emailjs.sendForm(
+        'service_nnr4tu9',
+        'template_tu72t9p',
+        e.target,
+        'user_MlLNxrp3PV3vyrlG5uG5C'
+        ).then((result) => {
+          console.log(result.text);
+          console.log(dlink);
+          window.location.href = dlink;
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+    }
+
     return (
       <>
         {/* Navbar */}
@@ -115,9 +121,7 @@ class SingleResources extends React.Component{
             {/* Header */}
             <div className='col-lg-12 resourcesDetailHeader'>
               <div className='wrap'>
-                <h1>
-                  {Header_Title}
-                </h1>
+                <Markup tagName='h1' content={Header_Title} />
               </div>
               <img className='img-fluid background d-none d-lg-block' src={`http://ompcms.okular.co.id${this.state.Header_Image}`} alt='Okular Mentorship Program' />
               <img className='img-fluid background d-block d-lg-none' src={`http://ompcms.okular.co.id${this.state.Header_Image_Mobile}`} alt='Okular Mentorship Program' />
@@ -133,30 +137,30 @@ class SingleResources extends React.Component{
             </div>
             <div className='col-lg-8 py-m-20p py-lg-10p px-m-10p px-lg-5p resourcesDetailForm'>
               <div className='wrap'>
-                <h6>{Title}</h6>
-                {Form_Brief}
+                <Markup tagName='h6' content={Title} />
+                <Markup tagName='div' content={Form_Brief} />
               </div>
               <img className='img-fluid d-block d-lg-none' src={imgStepbystepimages} alt='Okular Mentorship Program' />
               <form onSubmit={sendEmail}>
                 <input type='hidden' name='your-resources' className='form-control' value='Step by Step for Becoming a Professional'/>
                 <div className='form-row'>
                   <div className='form-group col-lg-6 pr-lg-5p'>
-                    <label>Nama kalian disini:</label>
+                    <label>Your name here:</label>
                     <input type='text' name='your-name' className='form-control' />
                     </div>
                   <div className='form-group col-lg-6'>
-                    <label>Email kalian:</label>
+                    <label>Your e-mail:</label>
                     <input type='email' name='your-email' className='form-control' />
                     </div>
                   <div className='form-group col-lg-6 pr-lg-5p'>
-                    <label>Nomor kalian:</label>
+                    <label>Your phone:</label>
                     <input type='number' name='your-phone' className='form-control' />
                     </div>
                   <div className='form-group col-lg-6'>
-                    <label>Bolehkan kita mengirim Email ke kalian?</label>
+                    <label>Can we email you guys?</label>
                     <select name='your-subject' className='form-control'>
-                        <option value='Ya' selected>Ya</option>
-                        <option value='Tidak Terimakasih'>Tidak Terimakasih</option>
+                      <option value='Ya' selected>Yes</option>
+                      <option value='Tidak Terimakasih'>No, Thanks</option>
                     </select>
                   </div>
                 </div>

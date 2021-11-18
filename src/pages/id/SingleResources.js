@@ -6,6 +6,7 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import '../../App.css';
+import { Markup } from 'interweave';
 import Navbar from './components/Navbar.js';
 import Footer from './components/Footer.js';
 import imgStepbystepheader from '../../assets/images/resources/step-by-step-header.jpg';
@@ -80,8 +81,9 @@ class SingleResources extends React.Component{
   }
   
   render(){
-    const {id, Nav_Link_ID, Title, Ebrochure, Header_Title, Form_Brief, Form_Disclaimer, Other_Sub_Title, Other_Title} = this.state.SingleResources;
-    
+    const {id, Nav_Link_ID, Title, Header_Title, Form_Brief, Form_Disclaimer, Other_Sub_Title, Other_Title} = this.state.SingleResources;
+    const dlink = `http://ompcms.okular.co.id${this.state.Ebrochure}`;
+
     // Form
     function sendEmail(e) {
       e.preventDefault();
@@ -93,12 +95,14 @@ class SingleResources extends React.Component{
         'user_MlLNxrp3PV3vyrlG5uG5C'
         ).then((result) => {
           console.log(result.text);
-          window.location.href = `http://ompcms.okular.co.id${this.state.Ebrochure}`;
+          console.log(dlink);
+          window.location.href = dlink;
       }, (error) => {
           console.log(error.text);
       });
       e.target.reset()
     }
+
     return (
       <>
         {/* Navbar */}
@@ -117,9 +121,7 @@ class SingleResources extends React.Component{
             {/* Header */}
             <div className='col-lg-12 resourcesDetailHeader'>
               <div className='wrap'>
-                <h1>
-                  {Header_Title}
-                </h1>
+                <Markup tagName='h1' content={Header_Title} />
               </div>
               <img className='img-fluid background d-none d-lg-block' src={`http://ompcms.okular.co.id${this.state.Header_Image}`} alt='Okular Mentorship Program' />
               <img className='img-fluid background d-block d-lg-none' src={`http://ompcms.okular.co.id${this.state.Header_Image_Mobile}`} alt='Okular Mentorship Program' />
@@ -135,9 +137,8 @@ class SingleResources extends React.Component{
             </div>
             <div className='col-lg-8 py-m-20p py-lg-10p px-m-10p px-lg-5p resourcesDetailForm'>
               <div className='wrap'>
-                <h6>{Title}</h6>
-                {Form_Brief}
-                {`http://ompcms.okular.co.id${this.state.Ebrochure}`}
+                <Markup tagName='h6' content={Title} />
+                <Markup tagName='div' content={Form_Brief} />
               </div>
               <img className='img-fluid d-block d-lg-none' src={imgStepbystepimages} alt='Okular Mentorship Program' />
               <form onSubmit={sendEmail}>
@@ -158,8 +159,8 @@ class SingleResources extends React.Component{
                   <div className='form-group col-lg-6'>
                     <label>Bolehkan kita mengirim Email ke kalian?</label>
                     <select name='your-subject' className='form-control'>
-                        <option value='Ya' selected>Ya</option>
-                        <option value='Tidak Terimakasih'>Tidak Terimakasih</option>
+                      <option value='Ya' selected>Ya</option>
+                      <option value='Tidak Terimakasih'>Tidak Terimakasih</option>
                     </select>
                   </div>
                 </div>

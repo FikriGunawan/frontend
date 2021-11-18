@@ -21,8 +21,9 @@ import imgWebsitedesignproposaltemplatecover from '../../assets/images/resources
 import imgPortfoliocover from '../../assets/images/resources/portfolio-cover.png';
 import imgFinalprojectcover from '../../assets/images/resources/final-project-cover.png';
 import fetch from 'isomorphic-fetch';
-import FreeResourcesDownloadLG from './components/FreeResourcesDownloadLG';
-import FreeResourcesDownloadM from './components/FreeResourcesDownloadM';
+import { Markup } from 'interweave';
+import FreeResourcesCompLG from './components/FreeResourcesCompLG';
+import FreeResourcesCompM from './components/FreeResourcesCompM';
 
 // Owl Carousel Settings
 const optionCarouselResources = {
@@ -55,22 +56,37 @@ class FreeResources extends React.Component{
   constructor(){
     super()
     this.state={
-      blogs: []
+      FRPage: [],
+      Header_Image: '',
+      Header_Image_Mobile: '',
+      Brief_Image: '',
+      Brief_Image_Mobile: ''
     }
   }
   
   componentWillMount(){
-    fetch('http://ompcms.okular.co.id/resources?_locale=id').then((response) => {
+    fetch('http://ompcms.okular.co.id/free-resources?_locale=id').then((response) => {
       if(response.status >= 400){
         throw new Error("Bad Response From Server");
       }
       return response.json();
-    }).then((blogs) => {
-      this.setState({blogs: blogs});
+    }).then((FR) => {
+      this.setState({FRPage: FR});
+      this.setState({Header_Image: FR.Header_Image.url});
+      this.setState({Header_Image_Mobile: FR.Header_Image_Mobile.url});
+      this.setState({Brief_Image: FR.Brief_Image.url});
+      this.setState({Brief_Image_Mobile: FR.Brief_Image_Mobile.url});
     })
   }
     
   render(){
+    const {
+      Brief_Sub_Title, 
+      Brief_Title, 
+      Brief_Desc, 
+      Download_Sub_Title, 
+      Download_Title
+    } = this.state.FRPage;
     return (
       <>
         {/* Navbar */}
@@ -88,8 +104,8 @@ class FreeResources extends React.Component{
 
             {/* Header */}
             <div className='col-lg-12 p-0 compHeader'>
-              <img className='img-fluid background d-none d-lg-block moveTop' src={imgResourcesHeader01} alt='Okular Mentorship Program' />
-              <img className='img-fluid background d-block d-lg-none' src={imgResourcesHeaderMobile01} alt='Okular Mentorship Program' />
+              <img className='img-fluid background d-none d-lg-block moveTop' src={`http://ompcms.okular.co.id${this.state.Header_Image}`} alt='Okular Mentorship Program' />
+              <img className='img-fluid background d-block d-lg-none' src={`http://ompcms.okular.co.id${this.state.Header_Image_Mobile}`} alt='Okular Mentorship Program' />
               <div className='moveDownHeader moveReWiHeader moveReHeHeader boxc'>
                 <div className='circle boxc'></div>
               </div>
@@ -101,52 +117,30 @@ class FreeResources extends React.Component{
             {/* Brief */}
             <div id='resourcesBrief' className='col-lg-12 pt-m-20p py-lg-10p px-m-10p px-lg-5p resourcesBrief'>
               <div className='compBrief'>
-                <h6>Iya Gratis!</h6>
-                <h3>Berbagi untuk Industri Kreatif yang Lebih Baik</h3>
+                <Markup tagName='h6' content={Brief_Sub_Title} />
+                <Markup tagName='h3' content={Brief_Title} />
                 <div className='brief'>
-                  <p>Tujuan kita dalam membuat panduan gratis ini agar kita dapat berbagi pengalaman untuk membantu kalian menjadi lebih baik. Kita ingin kalian berjalan lebih dekat menuju kesuksesan, dan menciptakan banyak hal menakjubkan. Oleh karena itu, di sini kalian akan menemukan berbagai panduan yang akan menjadi media bantuan dalam proses kalian menjadi seorang profesional.</p>
+                  <Markup tagName='div' content={Brief_Desc} />
                 </div>
               </div>
-              <img className='img-fluid image d-none d-lg-block' src={imgResourcesImages01} alt='Okular Mentorship Program' />
+              <img className='img-fluid image d-none d-lg-block' src={`http://ompcms.okular.co.id${this.state.Brief_Image}`} alt='Okular Mentorship Program' />
             </div>
             <div className='col-12 pb-m-20p px-m-0 resourcesBrief d-inline-block d-lg-none'>
-              <img className='img-fluid image' src={imgResourcesImagesMobile01} alt='Okular Mentorship Program' />
+              <img className='img-fluid image' src={`http://ompcms.okular.co.id${this.state.Brief_Image_Mobile}`} alt='Okular Mentorship Program' />
             </div>
 
             {/* Download */}
             <div className='col-lg-12 pb-m-20p py-lg-10p px-m-10p px-lg-5p resourcesDownload bgWhite'>
               <div className='compBrief pb-lg-5p text-center'>
-                <h6>Biarkan Kita Memperjelas</h6>
-                <h3>Free Downloadable <br />Resources</h3>
+                <Markup tagName='h6' content={Download_Sub_Title} />
+                <Markup tagName='h3' content={Download_Title} />
               </div>
               <div className='container-fluid d-none d-lg-block'>
                 <div className='row'>
-                  {
-                    this.state.blogs.map(({id, Title, Form_Brief, Thumbnail}) => (
-                      <FreeResourcesDownloadLG 
-                        key={id}
-                        resourceid={id}
-                        Title={Title}
-                        Form_Brief={Form_Brief}
-                        Thumbnail={Thumbnail}
-                      />
-                    ))
-                  }
+                  <FreeResourcesCompLG />
                 </div>
               </div>
-              <OwlCarousel className='carouselResources owl-theme d-block d-lg-none' {...optionCarouselResources}>
-                {
-                  this.state.blogs.map(({id, Title, Form_Brief, Thumbnail}) => (
-                    <FreeResourcesDownloadM 
-                      key={id}
-                      resourceid={id}
-                      Title={Title}
-                      Form_Brief={Form_Brief}
-                      Thumbnail={Thumbnail}
-                    />
-                  ))
-                }
-              </OwlCarousel>
+              <FreeResourcesCompM />
             </div>
 
           </div>

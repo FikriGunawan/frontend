@@ -6,6 +6,7 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import '../../../App.css';
+import { Markup } from 'interweave';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
 
@@ -17,8 +18,8 @@ const FreeResourcesDownloadM = ({resourceid, Title, Form_Brief, Thumbnail}) => {
         <div className='wrapImage'>
           <img className='img-fluid cover boxc' src={`http://ompcms.okular.co.id${Thumbnail.formats.small.url}`} alt='Okular Mentorship Program' />
         </div>
-        <p><b>{Title}</b></p>
-        <p>{Form_Brief}</p>
+        <p><Markup tagName='b' content={Title} /></p>
+        <Markup tagName='p' content={Form_Brief} />
       </Link>
     </div>
   );
