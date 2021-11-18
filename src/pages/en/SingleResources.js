@@ -143,7 +143,7 @@ class SingleResources extends React.Component{
               </div>
               <img className='img-fluid d-block d-lg-none' src={imgStepbystepimages} alt='Okular Mentorship Program' />
               <form onSubmit={sendEmail}>
-                <input type='hidden' name='your-resources' className='form-control' value='Step by Step for Becoming a Professional'/>
+                <input type='hidden' name='your-resources' className='form-control' value={Title}/>
                 <div className='form-row'>
                   <div className='form-group col-lg-6 pr-lg-5p'>
                     <label>Your name here:</label>
