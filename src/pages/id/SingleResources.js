@@ -15,6 +15,7 @@ import imgArrowDown from '../../assets/images/arrowDown.png';
 import imgStepbystepimages from '../../assets/images/resources/step-by-step-images.png';
 import imgStepbystepornament from '../../assets/images/resources/step-by-step-ornament.png';
 import imgStepbystepornamentmobile from '../../assets/images/resources/step-by-step-ornament-mobile.png';
+import imgStepbystepcover from '../../assets/images/resources/step-by-step-cover.png';
 import imgBuildingyourresumecover from '../../assets/images/resources/building-your-resume-cover.png';
 import imgLogodesignproposaltemplatecover from '../../assets/images/resources/logo-design-proposal-template-cover.png';
 import imgWebsitedesignproposaltemplatecover from '../../assets/images/resources/website-design-proposal-template-cover.png';
@@ -182,7 +183,20 @@ class SingleResources extends React.Component{
               </div>
               <OwlCarousel className='carouselResourcesDetailOther owl-theme pt-lg-5p' {...optionCarouselResourcesDetailOther}>
                 <div className='item'>
-                  <Link to='/id/building-your-resume'>
+                  <a href='/id/resources/1'>
+                    <div className='compCard'>
+                      <div className='images cursorHoverImg'>
+                        <img className='img-fluid boxc' src={imgStepbystepcover} alt='Okular Mentorship Program' />
+                      </div>
+                      <div className='wrap'>
+                        <p><span>Step by Step for Becoming a Professional</span></p>
+                        <p>Kalian lulusan baru? Atau mungkin kalian masih mencari pekerjaan, tapi bingung mau mulai dari mana? Template ini akan membantu kalian melewatinya!</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div className='item'>
+                  <a href='/id/resources/3'>
                     <div className='compCard'>
                       <div className='images cursorHoverImg'>
                         <img className='img-fluid boxc' src={imgBuildingyourresumecover} alt='Okular Mentorship Program' />
@@ -192,10 +206,10 @@ class SingleResources extends React.Component{
                         <p>Tidak tahu darimana memulai sebuah resume? Panduan ini akan membantu kalian membuat resume dari awal.</p>
                       </div>
                     </div>
-                  </Link>
+                  </a>
                 </div>
                 <div className='item'>
-                  <Link to='/id/logo-design-proposal-template'>
+                  <a href='/id/resources/5'>
                     <div className='compCard'>
                       <div className='images cursorHoverImg'>
                         <img className='img-fluid boxc' src={imgLogodesignproposaltemplatecover} alt='Okular Mentorship Program' />
@@ -205,10 +219,10 @@ class SingleResources extends React.Component{
                         <p>Apakah kalian membutuhkan tips untuk mempersiapkan proposal untuk desain logo kalian? Media panduan gratis ini akan memberikan kalian komposisi konten yang dapat dimasukan ke dalam proposal kalian.</p>
                       </div>
                     </div>
-                  </Link>
+                  </a>
                 </div>
                 <div className='item'>
-                  <Link to='/id/website-design-proposal-template'>
+                  <a href='/id/resources/7'>
                     <div className='compCard'>
                       <div className='images cursorHoverImg'>
                         <img className='img-fluid boxc' src={imgWebsitedesignproposaltemplatecover} alt='Okular Mentorship Program' />
@@ -218,10 +232,10 @@ class SingleResources extends React.Component{
                         <p>Apakah kalian memiliki cukup detail dalam proposal desain website kalian? Kita menyediakan struktur yang akan memperkuat proposal untuk proyek desain website kalian.</p>
                       </div>
                     </div>
-                  </Link>
+                  </a>
                 </div>
                 <div className='item'>
-                  <Link to='/id/creating-your-ultimate-portfolio'>
+                  <a href='/id/resources/9'>
                     <div className='compCard'>
                       <div className='images cursorHoverImg'>
                         <img className='img-fluid boxc' src={imgPortfoliocover} alt='Okular Mentorship Program' />
@@ -231,10 +245,10 @@ class SingleResources extends React.Component{
                         <p>Apakah kalian yakin dengan portofolio kalian? Dengan panduan ini, kita akan memberi kalian tips tentang bagaimana membuat portofolio kalian lebih menarik.</p>
                       </div>
                     </div>
-                  </Link>
+                  </a>
                 </div>
                 <div className='item'>
-                  <Link to='/id/determining-the-final-project'>
+                  <a href='/id/resources/11'>
                     <div className='compCard'>
                       <div className='images cursorHoverImg'>
                         <img className='img-fluid boxc' src={imgFinalprojectcover} alt='Okular Mentorship Program' />
@@ -244,7 +258,7 @@ class SingleResources extends React.Component{
                         <p>Apakah kalian kesulitan menentukan tugas akhir? Panduan media gratis ini akan membantu kalian menentukan topik yang tepat berdasarkan apa yang kalian sukai.</p>
                       </div>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               </OwlCarousel>
             </div>
