@@ -182,7 +182,7 @@ class SingleResources extends React.Component{
               </div>
               <OwlCarousel className='carouselResourcesDetailOther owl-theme pt-lg-5p' {...optionCarouselResourcesDetailOther}>
                 <div className='item'>
-                  <Link to='/id/building-your-resume'>
+                  <Link to='/en/building-your-resume'>
                     <div className='compCard'>
                       <div className='images cursorHoverImg'>
                         <img className='img-fluid boxc' src={imgBuildingyourresumecover} alt='Okular Mentorship Program' />
@@ -195,7 +195,7 @@ class SingleResources extends React.Component{
                   </Link>
                 </div>
                 <div className='item'>
-                  <Link to='/id/logo-design-proposal-template'>
+                  <Link to='/en/logo-design-proposal-template'>
                     <div className='compCard'>
                       <div className='images cursorHoverImg'>
                         <img className='img-fluid boxc' src={imgLogodesignproposaltemplatecover} alt='Okular Mentorship Program' />
@@ -208,7 +208,7 @@ class SingleResources extends React.Component{
                   </Link>
                 </div>
                 <div className='item'>
-                  <Link to='/id/website-design-proposal-template'>
+                  <Link to='/en/website-design-proposal-template'>
                     <div className='compCard'>
                       <div className='images cursorHoverImg'>
                         <img className='img-fluid boxc' src={imgWebsitedesignproposaltemplatecover} alt='Okular Mentorship Program' />
@@ -221,7 +221,7 @@ class SingleResources extends React.Component{
                   </Link>
                 </div>
                 <div className='item'>
-                  <Link to='/id/creating-your-ultimate-portfolio'>
+                  <Link to='/en/creating-your-ultimate-portfolio'>
                     <div className='compCard'>
                       <div className='images cursorHoverImg'>
                         <img className='img-fluid boxc' src={imgPortfoliocover} alt='Okular Mentorship Program' />
@@ -234,7 +234,7 @@ class SingleResources extends React.Component{
                   </Link>
                 </div>
                 <div className='item'>
-                  <Link to='/id/determining-the-final-project'>
+                  <Link to='/en/determining-the-final-project'>
                     <div className='compCard'>
                       <div className='images cursorHoverImg'>
                         <img className='img-fluid boxc' src={imgFinalprojectcover} alt='Okular Mentorship Program' />
