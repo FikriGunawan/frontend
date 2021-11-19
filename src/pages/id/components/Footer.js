@@ -48,18 +48,18 @@ const Footer = () => {
                 <div className='form-group col-lg-4'><input type='submit' className='btnBlack' value='Kirim'></input></div>
               </div>
             </form>
-            <Link className='gotop' to=''>
+            <a className='gotop' href=''>
               <img className='img-fluid d-none d-lg-block' src={imgGotop} alt='Okular Mentorship Program' />
               <img className='img-fluid d-block d-lg-none' src={imgGotopmobile} alt='Okular Mentorship Program' />
-            </Link>
+            </a>
           </div>
           <div className='col-lg-12 secFooter'>
             <div className='container-fluid'>
               <div className='row'>
                 <div className='col-lg-3 p-m-0 pl-lg-0'>
-                  <Link to='/'>
+                  <a href='/'>
                     <img className='img-fluid logo' src={imgLogo} alt='Okular Mentorship Program' />
-                  </Link>
+                  </a>
                   <div className='social'>
                     <a href=''>
                       <img className='img-fluid' src={imgSocialTwitter} alt='Okular Mentorship Program' />

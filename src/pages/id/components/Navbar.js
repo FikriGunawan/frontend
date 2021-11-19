@@ -32,23 +32,23 @@ const Navbar = ({langID, langEN}) => {
 		    <div className='row'>
           {/* Logo */}
           <div className='col-9 col-lg-8 navLogo' data-aos='fade-down' data-aos-duration='1000'>
-            <Link to='/'>
+            <a href='/id/home'>
               <img className='img-fluid' src={imgLogo} alt='Okular Mentorship Program' />
-            </Link>
+            </a>
           </div>
           {/* Language Burger */}
           <div className='col-3 col-lg-4 navMenu text-right' data-aos="fade-down" data-aos-duration="1000">
             <div className='wrap'>
               <ul className='lang d-none d-lg-inline-block'>
                 <li>
-                  <Link to={langEN}>
+                  <a href={langEN}>
                     EN
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link className='active' to={langID}>
+                  <a className='active' href={langID}>
                     ID
-                  </Link>
+                  </a>
                 </li>
               </ul>
               <div className='menu-icon' onClick={handleClick}>
@@ -60,56 +60,56 @@ const Navbar = ({langID, langEN}) => {
           <div className={click ? 'navSide active' : 'navSide'}>
             <ul className='lang d-block d-lg-none'>
               <li>
-                <Link to={langEN} onClick={closeMenu}>
+                <a href={langEN} onClick={closeMenu}>
                   EN
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className='active' to={langID} onClick={closeMenu}>
+                <a className='active' href={langID} onClick={closeMenu}>
                   ID
-                </Link>
+                </a>
               </li>
             </ul>
             <ul>
               <li>
-                <Link to='/' onClick={closeMenu}>
+                <a href='/' onClick={closeMenu}>
                   Home
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to='/id/quiz' onClick={closeMenu}>
+                <a href='/id/quiz' onClick={closeMenu}>
                   Quiz
-                </Link>
+                </a>
               </li>
               <li>
                 <a className='toggle' onClick={toggleClick}>Classes and Packages</a>
                 <ul className={click2 ? 'inner show' : 'inner'}>
                   <li>
-                    <Link to='/id/fundamental-design-course' onClick={closeMenu2}>
+                    <a href='/id/fundamental-design-course' onClick={closeMenu2}>
                       Fundamental Design Course
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to='/id/design-startup-course' onClick={closeMenu2}>
+                    <a href='/id/design-startup-course' onClick={closeMenu2}>
                       Design Startup Course
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to='/id/complete-design-course' onClick={closeMenu2}>
+                    <a href='/id/complete-design-course' onClick={closeMenu2}>
                       Complete Design Course
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link to='/id/free-resources' onClick={closeMenu}>
+                <a href='/id/free-resources' onClick={closeMenu}>
                   Free Resources
-                </Link>
+                </a>
               </li>
               {/* <li>
-                <Link to='/id/example-quiz' onClick={closeMenu}>
+                <a href='/id/example-quiz' onClick={closeMenu}>
                   Ex Quiz
-                </Link>
+                </a>
               </li> */}
             </ul>
           </div>

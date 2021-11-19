@@ -130,20 +130,24 @@ form input[type=number]{-moz-appearance:textfield;}
 /* =================================== ANIMATION =================================== */
 /* Cursor Hover */
 .cursorHover{position: absolute;opacity: 0;z-index: 3;transform: translate(-50%, -50%);transform-origin: 100% 100%;padding: 1%;width: auto;height: auto;text-align: center;transition: all 0.3s ease;transition-property: background, transform;pointer-events: none;}
-.cursorHoverOn{display: flex;opacity: 1;width: 6vw;height: 12vh;align-items: center;justify-content: center;background: url('assets/images/cursorHover.png');background-repeat: no-repeat;background-size: contain;border-radius: 70px;cursor: pointer;}
+.cursorHoverOn{display: flex;opacity: 1;width: 6vw;height: 12vh;align-items: center;justify-content: center;background: url('assets/images/cursorHover.png');background-repeat: no-repeat;background-size: contain;border-radius: 70px;
+  cursor: none;
+}
 .cursorHoverOn .text{margin-bottom: 5px;font-family: "Poppins Bold";font-size: 0.8vw;line-height: 2vh;color: #fff !important;}
 .cursorHoverOn img.text{width: 65%;}
 .cursorHoverImg{
   display: inline-block;
-  /* cursor: none; */
+  cursor: none;
 }
 .cursorHover2{position: absolute;opacity: 0;z-index: 3;transform: translate(-50%, -50%);transform-origin: 100% 100%;padding: 1%;width: auto;height: auto;text-align: center;transition: all 0.3s ease;transition-property: background, transform;pointer-events: none;}
-.cursorHoverOn2{display: flex;opacity: 1;width: 6vw;height: 12vh;align-items: center;justify-content: center;background: url('assets/images/cursorHover.png');background-repeat: no-repeat;background-size: contain;border-radius: 70px;cursor: pointer;}
+.cursorHoverOn2{display: flex;opacity: 1;width: 6vw;height: 12vh;align-items: center;justify-content: center;background: url('assets/images/cursorHover.png');background-repeat: no-repeat;background-size: contain;border-radius: 70px;
+  cursor: none;
+}
 .cursorHoverOn2 .text2{margin-bottom: 5px;font-family: "Poppins Bold";font-size: 0.8vw;line-height: 2vh;color: #fff !important;}
 .cursorHoverOn2 img.text2{width: 65%;}
 .cursorHoverImg2{
   display: inline-block;
-  /* cursor: none; */
+  cursor: none;
 }
 #godown{position: absolute;z-index: 1;margin: 0 auto;bottom: 3%;left: 0;right: 0;width: 6vh;height: 6vh;}
 #godown img{width: 100%;height: 100%;}
