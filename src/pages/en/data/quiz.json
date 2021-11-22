@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "no": "1",
+      "category": "Design Theory",
+      "question": "Which is NOT part of the Gestalt?",
+      "choices": ["Figure & Ground", "Flow", "Closure"],
+      "answer": "Figure & Ground"
+    },
+    {
+      "no": "2",
+      "category": "Design Theory",
+      "question": "Does a file count as PNG when a client sends you a file in word format?",
+      "choices": ["No", "Yes, as long as the image attached to the document is a PNG", "It depends on the version of Microsoft Word"],
+      "answer": "No"
+    },
+    {
+      "no": "3",
+      "category": "Design Theory",
+      "question": "What is monochromatic color?",
+      "choices": ["Colors with different tints, shades, and tones", "A color combination consisting of only white, gray, and black", "Color combinations consisting of primary colors"],
+      "answer": "Colors with different tints, shades, and tones"
+    },
+    {
+      "no": "4",
+      "category": "Design Theory",
+      "question": "Colors that are opposite each other on the color wheel are called?",
+      "choices": ["Analogous", "Complementary", "Split Complementary"],
+      "answer": "Analogous"
+    },
+    {
+      "no": "5",
+      "category": "Design Theory",
+      "question": "What is Leading?",
+      "choices": ["Space adjustment between two letters", "Vertical distance between lines of writing", "Overall distance between letter groups"],
+      "answer": "Space adjustment between two letters"
+    },
+    {
+      "no": "6",
+      "category": "Adobe Illustrator",
+      "question": "The following are tools that are included in the Transformation tools category, EXCEPT:",
+      "choices": ["Scale", "Invert", "Reflect"],
+      "answer": "Scale"
+    },
+    {
+      "no": "7",
+      "category": "Adobe Illustrator",
+      "question": "You can change the width and length of the artboard after you create it.",
+      "choices": ["True", "Wrong", "Only when reducing the size of the artboard"],
+      "answer": "True"
+    },
+    {
+      "no": "8",
+      "category": "Adobe Illustrator",
+      "question": "Where can you find the Drop Shadow Effect?",
+      "choices": ["Distort & Transform", "Stylize", "Blur"],
+      "answer": "Distort & Transform"
+    },
+    {
+      "no": "9",
+      "category": "Adobe Illustrator",
+      "question": "Can you expand brush strokes?",
+      "choices": ["Depends on the stroke effect", "Can't", "Yes"],
+      "answer": "Depends on the stroke effect"
+    },
+    {
+      "no": "10",
+      "category": "Adobe Photoshop",
+      "question": "What does PNG stand for?",
+      "choices": ["Portable Network Graphics", "Photographic Network Graphics", "Photographic Node Graphics"],
+      "answer": "Portable Network Graphics"
+    },
+    {
+      "no": "11",
+      "category": "Adobe Photoshop",
+      "question": "Can you guys duplicate the layers to another Adobe Photoshop file?",
+      "choices": ["Only on files that have the same artboard size", "Can't", "Yes"],
+      "answer": "Only on files that have the same artboard size"
+    },
+    {
+      "no": "12",
+      "category": "Adobe Photoshop",
+      "question": "What are Levels?",
+      "choices": ["To stack and merge images on top of each other", "Adjustment for all color tones in the tonal range", "Restore the previous version of the image"],
+      "answer": "To stack and merge images on top of each other"
+    },
+    {
+      "no": "13",
+      "category": "Adobe Photoshop",
+      "question": "Can you edit thousands of images at once in Adobe Photoshop?",
+      "choices": ["Yes, via Duplicate Tool", "Yes, with hard work and determination", "Yes, through Batch Processing"],
+      "answer": "Yes, via Duplicate Tool"
+    },    
+    {
+      "no": "14",
+      "category": "Adobe Indesign",
+      "question": "If you want to change the font for an entire document, what can save you time?",
+      "choices": ["Copy and paste the frame type", "Create paragraph styles", "Using the Eye Drop tool on the new frame type to another"],
+      "answer": "Copy and paste the frame type"
+    },
+    {
+      "no": "15",
+      "category": "Adobe Indesign",
+      "question": "Here are a few ways to add text to an Adobe Indesign document, EXCEPT:",
+      "choices": ["Paste file with text from Microsoft Word", "Create text frames", "Using command/control key + T"],
+      "answer": "Paste file with text from Microsoft Word"
+    },
+    {
+      "no": "16",
+      "category": "Adobe Indesign",
+      "question": "Can you have more than ONE slide master?",
+      "choices": ["Only on document file types", "Can't", "Yes"],
+      "answer": "Only on document file types"
+    },
+    {
+      "no": "17",
+      "category": "Soft Skills",
+      "question": "What will you do on your first day at the office?",
+      "choices": ["Wait until you are given a job", "Introduce yourself to office colleagues", "Make yourself comfortable"],
+      "answer": "Wait until you are given a job"
+    },
+    {
+      "no": "18",
+      "category": "Soft Skills",
+      "question": "What is the most important thing you have to do to prepare for an interview?",
+      "choices": ["Sleep tightly", "Remembering all the things that had to be said", "Self-care to keep yourself calm and boost your confidence"],
+      "answer": "Sleep tightly"
+    },
+    {
+      "no": "19",
+      "category": "Soft Skills",
+      "question": "How do you accept criticism from your co-workers?",
+      "choices": ["Learn from criticism and constructive input for your work", "Try to keep your design when you are confident with it", "Prove to them whether what they say can make your design better or not"],
+      "answer": "Learn from criticism and constructive input for your work"
+    },
+    {
+      "no": "20",
+      "category": "Soft Skills",
+      "question": "What is the first thing you should do when you start a meeting with a potential client?",
+      "choices": ["Shake their hands and introduce yourselves", "Give your business card", "Give them a compliment"],
+      "answer": "Shake their hands and introduce yourselves"
+    }
+  ]
+}
