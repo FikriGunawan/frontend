@@ -369,7 +369,7 @@ class CompleteDesignCourse extends React.Component{
                     </div>
                     <div className='form-group col-lg-6'>
                       <label>{Form_Title4}</label>
-                      <select className='form-control' id='formSelect1'>
+                      <select name='your-background' className='form-control'>
                         <option value='Ya' selected>{Form_Title4_Field1}</option>
                         <option value='Tidak'>{Form_Title4_Field2}</option>
                       </select>
@@ -379,36 +379,36 @@ class CompleteDesignCourse extends React.Component{
                         <p>{Form_Title5} <img className='img-fluid required' src={imgOrnament08} alt='Okular Mentorship Program' /></p>
                       </div>
                       <div className='contentLeft'>
-                        <input type='checkbox' id='day1' value='Senin' />
+                        <input type='checkbox' name='day1' id='day1' value='Senin | ' />
                         <label for='day1'>{Form_Title5_Day1}</label>
-                        <input type='checkbox' id='day2' value='Selasa' />
+                        <input type='checkbox' name='day2' id='day2' value='Selasa | ' />
                         <label for='day2'>{Form_Title5_Day2}</label>
-                        <input type='checkbox' id='day3' value='Rabu' />
+                        <input type='checkbox' name='day3' id='day3' value='Rabu | ' />
                         <label for='day3'>{Form_Title5_Day3}</label>
-                        <input type='checkbox' id='day4' value='Kamis' />
+                        <input type='checkbox' name='day4' id='day4' value='Kamis | ' />
                         <label for='day4'>{Form_Title5_Day4}</label>
-                        <input type='checkbox' id='day5' value='Jumat' />
+                        <input type='checkbox' name='day5' id='day5' value='Jumat | ' />
                         <label for='day5'>{Form_Title5_Day5}</label>
-                        <input type='checkbox' id='day6' value='Sabtu' />
+                        <input type='checkbox' name='day6' id='day6' value='Sabtu' />
                         <label for='day6'>{Form_Title5_Day6}</label>
                       </div>
                       <div className='contentRight'>								
-                        <input type='checkbox' id='time1' value='09:00 - 11:00' />
+                        <input type='checkbox' name='time1' id='time1' value='09:00 - 11:00 | ' />
                         <label for='time1'>{Form_Title5_Time1}</label>
-                        <input type='checkbox' id='time2' value='11:00 - 13:00' />
+                        <input type='checkbox' name='time2' id='time2' value='11:00 - 13:00 | ' />
                         <label for='time2'>{Form_Title5_Time2}</label>
-                        <input type='checkbox' id='time3' value='14:00 - 17:00' />
+                        <input type='checkbox' name='time3' id='time3' value='14:00 - 17:00 | ' />
                         <label for='time3'>{Form_Title5_Time3}</label>
-                        <input type='checkbox' id='time4' value='17:00 - 19:00' />
+                        <input type='checkbox' name='time4' id='time4' value='17:00 - 19:00 | ' />
                         <label for='time4'>{Form_Title5_Time4}</label>
-                        <input type='checkbox' id='time5' value='20:00 - 22:00' />
+                        <input type='checkbox' name='time5' id='time5' value='20:00 - 22:00' />
                         <label for='time5'>{Form_Title5_Time5}</label>
                       </div>
                       <p className='note'><img className='img-fluid required' src={imgOrnament08} alt='Okular Mentorship Program' /> {Form_Note}.</p>
                     </div>
                     <div className='form-group col-lg-12'>
                       <label>{Form_Title6}</label>
-                      <input type='date' id='start' name='trip-start' value='2021-06-07' className='form-control' required />
+                      <input type='date' id='start' name='your-start' className='form-control' required />
                     </div>
                     <div className='form-group col-lg-12'><input type='submit' className='btnBlack' value={Form_Button}></input></div>
                   </div>
