@@ -287,15 +287,15 @@ class DesignStartupCourse extends React.Component{
                   <div className='form-row'>
                     <div className='form-group col-lg-6'>
                       <label>{Form_Title1}</label>
-                      <input type='text' name='your-name' className='form-control' />
+                      <input type='text' name='your-name' className='form-control' required />
                     </div>
                     <div className='form-group col-lg-6'>
                       <label>{Form_Title2}</label>
-                      <input type='email' name='your-email' className='form-control' />
+                      <input type='email' name='your-email' className='form-control' required />
                     </div>
                     <div className='form-group col-lg-6'>
                       <label>{Form_Title3}</label>
-                      <input type='number' name='your-phone' className='form-control' />
+                      <input type='number' name='your-phone' className='form-control' required />
                     </div>
                     <div className='form-group col-lg-6'>
                       <label>{Form_Title4}</label>
@@ -338,7 +338,7 @@ class DesignStartupCourse extends React.Component{
                     </div>
                     <div className='form-group col-lg-12'>
                       <label>{Form_Title6}</label>
-                      <input type='date' id='start' name='trip-start' value='2021-06-07' className='form-control' />
+                      <input type='date' id='start' name='trip-start' value='2021-06-07' className='form-control' required />
                     </div>
                     <div className='form-group col-lg-12'><input type='submit' className='btnBlack' value={Form_Button}></input></div>
                   </div>

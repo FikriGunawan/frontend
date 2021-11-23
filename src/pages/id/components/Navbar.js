@@ -32,7 +32,7 @@ const Navbar = ({langID, langEN}) => {
 		    <div className='row'>
           {/* Logo */}
           <div className='col-9 col-lg-8 navLogo' data-aos='fade-down' data-aos-duration='1000'>
-            <a href='/id/home'>
+            <a href='/'>
               <img className='img-fluid' src={imgLogo} alt='Okular Mentorship Program' />
             </a>
           </div>

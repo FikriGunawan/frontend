@@ -43,11 +43,11 @@ const Footer = () => {
               <div className='form-row'>
                 <div className='form-group col-lg-4'>
                   <label><b>Your name here:</b></label>
-                  <input type='text' name='your-name' className='form-control' />
+                  <input type='text' name='your-name' className='form-control' required />
                 </div>
                 <div className='form-group col-lg-4'>
                   <label><b>Your e-mail:</b></label>
-                  <input type='email' name='your-email' className='form-control' />
+                  <input type='email' name='your-email' className='form-control' required />
                 </div>
                 <div className='form-group col-lg-4'><input type='submit' className='btnBlack' value='Send'></input></div>
               </div>

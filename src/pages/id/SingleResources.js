@@ -147,15 +147,15 @@ class SingleResources extends React.Component{
                 <div className='form-row'>
                   <div className='form-group col-lg-6 pr-lg-5p'>
                     <label>Nama kalian disini:</label>
-                    <input type='text' name='your-name' className='form-control' />
+                    <input type='text' name='your-name' className='form-control' required />
                     </div>
                   <div className='form-group col-lg-6'>
                     <label>Email kalian:</label>
-                    <input type='email' name='your-email' className='form-control' />
+                    <input type='email' name='your-email' className='form-control' required />
                     </div>
                   <div className='form-group col-lg-6 pr-lg-5p'>
                     <label>Nomor kalian:</label>
-                    <input type='number' name='your-phone' className='form-control' />
+                    <input type='number' name='your-phone' className='form-control' required />
                     </div>
                   <div className='form-group col-lg-6'>
                     <label>Bolehkan kita mengirim Email ke kalian?</label>

@@ -14,13 +14,13 @@ import Footer from './Footer.js';
 const FreeResourcesDownloadLG = ({resourceid, Title, Form_Brief, Thumbnail}) => {
   return(
     <div className='col-lg-4 p-lg-4'>
-      <Link className='cursorHoverImg' to={`/id/resources/${resourceid}`}>
+      <a href={`/id/resources/${resourceid}`}>
         <div className='wrapImage'>
           <img className='img-fluid cover boxc' src={`http://ompcms.okular.co.id${Thumbnail.formats.small.url}`} alt='Okular Mentorship Program' />
         </div>
         <p><Markup tagName='b' content={Title} /></p>
         <Markup tagName='p' content={Form_Brief} />
-      </Link>
+      </a>
     </div>
   );
 }

@@ -597,15 +597,15 @@ class Home extends React.Component{
                   <div className='form-row'>
                     <div className='form-group col-lg-6 pr-lg-5p'>
                       <label>{Contact_Form_Title1}</label>
-                      <input type='text' name='your-name' className='form-control' />
+                      <input type='text' name='your-name' className='form-control' required />
                       </div>
                     <div className='form-group col-lg-6'>
                       <label>{Contact_Form_Title2}</label>
-                      <input type='email' name='your-email' className='form-control' />
+                      <input type='email' name='your-email' className='form-control' required />
                       </div>
                     <div className='form-group col-lg-6 pr-lg-5p'>
                       <label>{Contact_Form_Title3}</label>
-                      <input type='number' name='your-phone' className='form-control' />
+                      <input type='number' name='your-phone' className='form-control' required />
                       </div>
                     <div className='form-group col-lg-6'>
                       <label>{Contact_Form_Title4}</label>
@@ -616,7 +616,7 @@ class Home extends React.Component{
                       </div>
                       <div className='form-group col-lg-12'>
                       <label>{Contact_Form_Title5}</label>
-                        <textarea name='your-message' className='form-control' rows='6'></textarea>
+                        <textarea name='your-message' className='form-control' rows='6' required></textarea>
                       </div>
                   </div>
                   <input type='submit' className='btnBlack' value={Contact_Form_Button}></input>
