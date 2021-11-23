@@ -47,6 +47,12 @@ const QuizQuestion = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion,
 
   return (
     <>
+      {/* Navbar */}
+      <Navbar
+        langID='/id/quiz'
+        langEN='/en/quiz'
+      />
+      
       {/* Main */}
       <div id='mainQuestion' className='container-fluid'>
         <div className='row'>
@@ -82,6 +88,9 @@ const QuizQuestion = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion,
 
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </>
   )
 }

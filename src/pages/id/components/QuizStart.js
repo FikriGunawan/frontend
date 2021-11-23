@@ -18,6 +18,12 @@ const QuizStart = ({ onQuizStart }) => {
 
   return (
     <> 
+      {/* Navbar */}
+      <Navbar
+        langID='/id/quiz'
+        langEN='/en/quiz'
+      />
+
       {/* Main */}
       <div id='mainQuiz' className='container-fluid overflow-hidden'>
         <div className='row'>
@@ -55,6 +61,9 @@ const QuizStart = ({ onQuizStart }) => {
 
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </>
   )
 }

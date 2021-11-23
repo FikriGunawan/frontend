@@ -4,6 +4,9 @@ footer .secSubscribe h4{margin-bottom: 7vh;width: 61%;}
 footer .secSubscribe form .form-group{padding-right: 3%;}
 footer .secSubscribe form .form-group .btnBlack{margin-top: 4.41vh;padding: 1.57vh 2.5vw;}
 footer .secSubscribe .gotop{position: absolute;margin: 0;bottom: 0;right: 0;width: 15%;}
+footer .secSubscribe .gotop p{position: absolute;top: 10%;left: 10%;width: 30%;line-height: 2.5vh;}
+footer .secSubscribe .gotop .gtWrap .gtOne,footer .secSubscribe .gotop .gtWrap .gtTwo{display: none;width: 100%;}
+footer .secSubscribe .gotop .gtWrap .gtOne.active,footer .secSubscribe .gotop .gtWrap .gtTwo.active{display: block;}
 footer .secFooter{padding: 5%;background: #fff;}
 footer .secFooter .logo{width: 80%;}
 footer .secFooter .social{display: inline-block;vertical-align: middle;width: 18%;}
@@ -20,6 +23,7 @@ footer .secCopyright p{margin-bottom: 0;color: #fff;}
   footer .secSubscribe{padding-bottom: 40vh;}
   footer .secSubscribe h4{margin-bottom: 6vh;width: 100%;}
   footer .secSubscribe .gotop{width: 100%;}
+  footer .secSubscribe .gotop p{margin: 0 auto;top: 0;left: 0;right: 10%;width: 15%;line-height: 2vh;}
   footer .secFooter{padding: 20% 10% 25%;}
   footer .secFooter .logo{margin-bottom: 3vh;width: 70%;}
   footer .secFooter .social{margin-bottom: 7vh;width: 100%;}

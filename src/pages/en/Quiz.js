@@ -54,11 +54,6 @@ const Quiz = () => {
 
   return (
     <>
-      {/* Navbar */}
-      <Navbar
-        langID='/id/quiz'
-        langEN='/en/quiz'
-      />
 
       {step === 1 && <QuizStart onQuizStart={quizStartHandler} />}
       {step === 2 && <QuizQuestion
@@ -76,9 +71,7 @@ const Quiz = () => {
         onAnswersCheck={() => setShowModal(true)}
         time={time}
       />}
-
-      {/* Footer */}
-      <Footer />
+      
     </>
   );
 }

@@ -26,6 +26,8 @@ import imgHomeImagesMobile07 from '../../assets/images/home/homeImagesMobile07.p
 import imgHomeImagesMobile08 from '../../assets/images/home/homeImagesMobile08.png';
 import imgHomeImages06 from '../../assets/images/home/homeImages06.png';
 import imgKlik from '../../assets/images/klik.png';
+import imgKlik02 from '../../assets/images/klik02.png';
+import imgKlik03 from '../../assets/images/klik03.png';
 import imgHomeImages07 from '../../assets/images/home/homeImages07.png';
 import imgHomeImages08 from '../../assets/images/home/homeImages08.png';
 import imgHomeImagesMobile09 from '../../assets/images/home/homeImagesMobile09.png';
@@ -411,7 +413,7 @@ class Home extends React.Component{
                       <Markup tagName='h5' content={Class_Category_Title_1} />
                       <div className='overlay'></div>
                       <div className='oval'></div>
-                      <img className='info' src={imgKlik} alt='Okular Mentorship Program' />
+                      <img className='info' src={imgKlik03} alt='Okular Mentorship Program' />
                     </a>
                   </div>
                   <div className='col-lg-4 py-lg-5p px-lg-5p item homeCaPItem2 text-center bgRed'>
@@ -420,7 +422,7 @@ class Home extends React.Component{
                       <Markup tagName='h5' content={Class_Category_Title_2} />
                       <div className='overlay'></div>
                       <div className='oval'></div>
-                      <img className='info' src={imgKlik} alt='Okular Mentorship Program' />
+                      <img className='info' src={imgKlik03} alt='Okular Mentorship Program' />
                     </a>
                   </div>
                   <div className='col-lg-4 py-lg-5p px-lg-5p item homeCaPItem3 text-center bgRed'>
@@ -429,7 +431,7 @@ class Home extends React.Component{
                       <Markup tagName='h5' content={Class_Category_Title_3} />
                       <div className='overlay'></div>
                       <div className='oval'></div>
-                      <img className='info' src={imgKlik} alt='Okular Mentorship Program' />
+                      <img className='info' src={imgKlik03} alt='Okular Mentorship Program' />
                     </a>
                   </div>
                 </div>

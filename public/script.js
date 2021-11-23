@@ -111,6 +111,15 @@
 			});
 		});
 
+		// Back to Top Image Hover
+		$('footer .secSubscribe .gotop').hover(function() {
+			$('footer .secSubscribe .gotop .gtWrap .gtTwo').addClass('active');
+			$('footer .secSubscribe .gotop .gtWrap .gtOne').removeClass('active');
+		}, function() {
+			$('footer .secSubscribe .gotop .gtWrap .gtOne').addClass('active');
+			$('footer .secSubscribe .gotop .gtWrap .gtTwo').removeClass('active');
+		});
+
 		// Move Down
     $('#godown').click(function(){
 			$('html, body').animate({

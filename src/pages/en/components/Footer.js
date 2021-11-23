@@ -4,7 +4,11 @@ import axios from 'axios';
 import emailjs from 'emailjs-com';
 import './Footer.css';
 import imgGotop from '../../../assets/images/gotop.png';
+import imgGotop02 from '../../../assets/images/gotop02.png';
+import imgGotop03 from '../../../assets/images/gotop03.png';
+import imgGotop04 from '../../../assets/images/gotop04.png';
 import imgGotopmobile from '../../../assets/images/gotopmobile.png';
+import imgGotopmobile02 from '../../../assets/images/gotopmobile02.png';
 import imgLogo from '../../../assets/images/logo.png';
 import imgSocialTwitter from '../../../assets/images/socialTwitter.png';
 import imgSocialFB from '../../../assets/images/socialFB.png';
@@ -49,8 +53,12 @@ const Footer = () => {
               </div>
             </form>
             <a className='gotop' href=''>
-              <img className='img-fluid d-none d-lg-block' src={imgGotop} alt='Okular Mentorship Program' />
-              <img className='img-fluid d-block d-lg-none' src={imgGotopmobile} alt='Okular Mentorship Program' />
+              <p>Back to top</p>
+              <div className='gtWrap d-none d-lg-block'>
+                <img className='img-fluid gtOne active' src={imgGotop03} alt='Okular Mentorship Program' />
+                <img className='img-fluid gtTwo' src={imgGotop04} alt='Okular Mentorship Program' />
+              </div>
+              <img className='img-fluid d-block d-lg-none' src={imgGotopmobile02} alt='Okular Mentorship Program' />
             </a>
           </div>
           <div className='col-lg-12 secFooter'>
