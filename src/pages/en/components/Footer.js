@@ -10,7 +10,7 @@ import imgGotop04 from '../../../assets/images/gotop04.png';
 import imgGotopmobile from '../../../assets/images/gotopmobile.png';
 import imgGotopmobile02 from '../../../assets/images/gotopmobile02.png';
 import imgLogo from '../../../assets/images/logo.png';
-import imgSocialTwitter from '../../../assets/images/socialTwitter.png';
+import imgSocialIG from '../../../assets/images/socialIG.png';
 import imgSocialFB from '../../../assets/images/socialFB.png';
 
 function sendEmail(e) {
@@ -69,10 +69,10 @@ const Footer = () => {
                     <img className='img-fluid logo' src={imgLogo} alt='Okular Mentorship Program' />
                   </a>
                   <div className='social'>
-                    <a href=''>
-                      <img className='img-fluid' src={imgSocialTwitter} alt='Okular Mentorship Program' />
+                    <a target='_blank' href='https://www.instagram.com/okularmentorshipprogram/'>
+                      <img className='img-fluid' src={imgSocialIG} alt='Okular Mentorship Program' />
                     </a>
-                    <a href=''>
+                    <a target='_blank' href='https://www.facebook.com/Okular-Mentorship-Program-393653164797874'>
                       <img className='img-fluid' src={imgSocialFB} alt='Okular Mentorship Program' />
                     </a>
                   </div>
